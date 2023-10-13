@@ -9,15 +9,21 @@
         <meta property="og:image" content="image/로니콜먼.jpg">
         <meta property="og:description" content="너도 되고싶어? 그럼 들어와~">
         <meta name="keywords" content="웹퍼블리싱, 계원, HTML, css"  /> 
+        <link rel="stylesheet" type="text/css" href="style.css" />
         <style>
             body {
-                background-image: url('image/Texturelabs_Fabric_174XL.jpg');
+                
+                 background-image: url('image/Texturelabs_Fabric_174XL.jpg');
                 background-repeat: no-repeat ;
                 background-position: center;
 
             }
         </style>
-        
+        <style>
+            body{
+                color:brown;}
+        </style>
+
     </head>
     <body> <!--본문-->
         
@@ -28,7 +34,7 @@
                 
         </h1>
         <p1>
-            <a href="sub.html"target="_blank">꿂</a>
+            <a style="color:pink;"href="sub.html"target="_blank">꿂</a>
             <a href="http://www.naver.com"target="_blank">네이버</a>
             <a href="https://lms.xr.ac.kr/login.php"target="_blank">교양수강과목</a>
             <a href="https://cafe.naver.com/kwdmd" target="_blank">계원디미디카페</a>
@@ -156,6 +162,76 @@
             
                 </form>
 
+            <section><!--같은 주제를 가지고 있는 내용의 모임-->
+            <h1>구획1 내용</h1>
+            구획1 내용
+        </section>
+
+        <nav><!--네비게이션, 페이지 이동 버튼 모음-->
+            <u1>
+                <li><a herf="링크주소">링크버튼</a></li>
+                <li><a herf="링크주소">링크버튼</a></li>
+
+            </u1>
+            <a herf="링크주소">링크버튼</a>
+        </nav>
+        <article><!--연관성이 다소 적은 내용의 모임-->
+            <h1>[속보]주재훈 모션그래픽 a+???!</h1>
+            구라다! ㅋㅋ 그래도 받겠찌
+            <h1>[속보]주재훈 모션그래픽 a+???!</h1>
+            <img width="200px" height="auto" src="image/안돼!.gif">
+            구라다! ㅋㅋ 그래도 받겠찌
+
+        </article>
+        <aside><!--연관성이 아예 없는 내용의 모임-->
+        <h1>광고제목</h1>
+        광고내용
+        </aside>
+
+        <header>
+            우아아앙
+        </header><!--본문(body)내에서의 서론-->
+        <footer>
+            앙아아아
+        </footer><!--본문(body)내에서의 결론-->
+
+        <canvas id="myCanvas"></canvas><!--dd-->
+        <script>
+            var canvas = document.getElementById("myCanvas"); //get element by id //아이디 기준으로 요소 가져오기
+            var ctx = canvas.getContext("2d"); //2D canvas를 생성합니다.
+            ctx.fillStyle = "#FF0000"; //색을 지정합니다.
+
+            ctx.fillRect(25, 25, 100, 100); //채움 사각형
+            ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+    ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+    
+    ctx.fillStyle = "#000000";
+    ctx.beginPath(); //선그리기 시작
+    ctx.moveTo(65, 75); //펜 들어 움직이기
+    ctx.lineTo(90, 95); //선 그으며 움직이기
+    ctx.lineTo(90, 55);
+    ctx.fill(); //내부 채우기
+    
+    ctx.beginPath();
+    ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+    ctx.moveTo(260, 75);
+    ctx.arc(225, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+    ctx.moveTo(215, 65);
+    ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+    ctx.moveTo(245, 65);
+    ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+    ctx.stroke();   
+        </script>
+
+        <audio controls>
+            <source src="mp3/file_example_MP3_700KB.mp3" type="audio/mpeg" />
+        </audio>
+        <video controls>
+            <source src="mp4/file_example_MP4_480_1_5MG.mp4" type="video/mp4" />
+        </video>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1H4zSK6XdBA?si=quraeEvjHNFzLK9b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Rr4YNgIQsvg?si=xSKb1kxRpDIRJHFW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </body>
 </html>
 

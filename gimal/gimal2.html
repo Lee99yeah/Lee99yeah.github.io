@@ -23,6 +23,7 @@
                 position: absolute;
                 opacity: 0;
                 transition: all ease 0.5s;
+                
             }
         .jb-title:hover>.jb-text
             {
@@ -34,12 +35,24 @@
                 list-style: none;   
                 display:flex;
                 
+                
 
             }
             div ul li{
                 border-right: solid 1px gray;
                 padding: 0px 8px;
             }
+
+            div ol
+            {
+                padding: 0px;
+                list-style: none;
+            }
+            div ol li span{
+                font-weight: bold;
+                margin: 15px;
+            }
+            
         </style>
     </head>
 
@@ -61,7 +74,19 @@
              <span></span>
         </header>
         <div>내용부분</div>
-        <footer>footer</footer>
+        <footer>
+            <div>
+                <ol><h2>CONTACT ME</h2>
+                    <li><span>HQ</span>서울시 강동구 성내로 15길 10-7</li>
+                    <li><span>Phone</span>010-3105-6286</li>
+                    <li><span>EMail</span>dml5489@naver.com</li>
+                </ol>
+            </div>
+            <div>
+                <h2>WORK HOUR</h2>
+                월요일-금요일(공휴일 제외)/ 오전 10시-6시 문의의 경우 해당 시가엔 답변이 가능합니다.
+            </div>   
+        </footer>
 
 
 

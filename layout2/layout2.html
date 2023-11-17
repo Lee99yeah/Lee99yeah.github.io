@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout2</title>
+        <meta charset="utf-8" />
+
+        <style>
+            header{
+                display: flex;
+                justify-content: space-between;
+                padding: 5px 50px;
+                background-color: rgb(0, 108, 197);
+            }
+            header ul{
+                list-style: none;
+                display: flex;
+            }
+            header li{
+                padding: 0px 10px;
+            }
+            header h1{
+                margin: 0px; 
+            }
+            header h1 span{
+                color: rgb(184, 184, 0);
+            }
+            
+            #main_visual{
+                background-image: url("MAINVISUAL.png");
+                padding: 100px;
+                color: white;
+                text-align: center;
+                background-size: 100px auto;
+                background-repeat: no-repeat;
+                background-color: black;
+                background-position: 50% 50%;
+                background-size: contain; /*contain=담기도록*/
+                background-size: cover;
+            }
+            #main_visual h2{
+                font-size: 40px;
+                letter-spacing: 18px; /*레터 스페이싱 자간!*/
+                margin: 0px;
+            }
+            #main_visual p{
+                margin: 3px;
+            }
+            section div{
+                padding: 35px;
+            }
+            h3{
+                text-align: center;
+                font-size: 40px;
+            }
+            section p{
+                text-align: center;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>MY<span>FOLIO</span></h1>  <!--div span 의미 없이 사용 개꿀-->
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT ME</li>
+                <li>SERVICE</li>
+                <li>MY WORK</li>
+                <li>CONTACT ME</li>
+            </ul>
+        </header>
+        <div id="main_visual">
+                <p>hellow my name is JaeWoong</p>
+                <h2>I'am twenty five years old</h2>
+                <p>Orem ipsum dolor sit amet, consectetur</p>
+                <img src="">
+
+        </div>
+        <section>
+            <div><h3>ABOUT ME</h3>
+            <p>
+                abcde abcde abcde abcde abcde abcd abcde abcde abcde abcde abcde abcde 
+                abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde abcde 
+            </p>
+             </div>
+            <ul>ABCDEFG
+                <li>higk</li>
+            </ul>
+        </section>
+        <section>content2</section>
+    </div>
+</body>
+</html>

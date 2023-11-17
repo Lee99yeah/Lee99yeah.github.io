@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>기말프로젝트</title>
+        <meta charset="utf-8" />
+        <style>
+            header{
+                display: flex;
+                justify-content: space-between;
+                margin: 15px;
+            }
+            .jb-title{
+               padding: 25px;
+            }
+        
+            .jb-text
+            {
+                padding: 15px 20px;
+                background-color: #444444;
+                border-radius: 5px;
+                color: #ffffff;
+                display: none;
+                position: absolute;
+                opacity: 0;
+                transition: all ease 0.5s;
+            }
+        .jb-title:hover>.jb-text
+            {
+                display: block;
+                opacity: 1;
+            }
+            div ul
+            {
+                list-style: none;   
+                display:flex;
+                
+
+            }
+            div ul li{
+                border-right: solid 1px gray;
+                padding: 0px 8px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>JJPP</h1>
+            <div class="jb-title">work
+                <div class="jb-text">
+                    <ul>
+                        <li>home</li>
+                        <li>middle</li>
+                        <li>layout1</li>
+                        <li>layout2</li>
+                        <li>layout3</li>
+                        <li>goodbye2023</li>
+                    </ul>
+                </div>
+             </div>
+             <span></span>
+        </header>
+        <div>내용부분</div>
+        <footer>footer</footer>
+
+
+
+
+    </body>
+</html>
+

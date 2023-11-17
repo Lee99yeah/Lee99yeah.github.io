@@ -7,8 +7,8 @@
         <style>
             header{
                 display: flex;
-                justify-content: space-between;
-                padding: 5px 50px;
+                justify-content:space-around;
+                padding: 5px 35px;
             }
             header ul{
                 list-style: none;
@@ -19,6 +19,7 @@
             }
             header h1{
                 margin: 4px 0px;
+                justify-content: left;
             }
             #main_visual{
                 background-image: url("계원예대 홈페이지.png");
@@ -28,7 +29,27 @@
                 background-position: 50% 50%;
                 background-size: contain; /*contain=담기도록*/
                 background-size: cover;
+                padding: 550px;
             }
+            /*실험*/
+            * {
+        font-family: Consolas, monospace;
+        font-size: 16px;
+      }
+      .jb-text {
+        padding: 15px 20px;
+        background-color: #444444;
+        border-radius: 5px;
+        color: #ffffff;
+        display: none;
+        position: absolute;
+        opacity: 0;
+        transition: all ease 0.5s;
+      }
+      .jb-title:hover+.jb-text {
+            display: block;
+            opacity: 1;
+        }
         </style>
     </head>
 <body>
@@ -36,14 +57,25 @@
         <header>
             <h1>JW.PP</h1>
             <ul>
-                <li>CONTENT1</li>
-                <li>CONTENT2</li>
-                <li>CONTENT3</li>
+                <li>WORK</li>
+                <li>ABOUT</li>
             </ul>
         </header>
         <div id="main_visual">main_visual</div>
         <section>content1</section>
         <section>content2</section>
+        <!--실험-->
+        <p class="jb-title">과제 설명 보기  </p>
+        <div class="jb-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <div>111</div>
+        <div>111</div>
+        <div>111</div>
+        <div>111</div>
     </div>
+    
 </body>
 </html>
+
+

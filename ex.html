@@ -11,6 +11,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             background-color: #1a1a1a;
             color: white;
@@ -38,6 +39,38 @@
             height: 100%;
             perspective: 800px;
             margin-top: 20px;
+            position: relative;
+        }
+
+        .matrix-text {
+            position: absolute;
+            font-size: 24px;
+            color: #00ffcc;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #00ffcc;
+            animation: typing 2s steps(20) infinite, fadeOut 4s 2s forwards;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeOut {
+            from, to {
+                opacity: 1;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
         }
 
         .dna {
@@ -47,6 +80,13 @@
             border-radius: 50%;
             animation: rotateDna 10s linear infinite;
             transform-style: preserve-3d;
+        }
+
+        .matrix-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
         }
 
         @keyframes rotateDna {
@@ -64,13 +104,16 @@
         <a href="html.html">html연습</a>
         <a href="css.html">css연습</a>
         <a href="main.html">자유주제페이지</a>
-        <a href="layout1.html">레이아웃1</a>
-        <a href="layout2.html">레이아웃2</a>
-        <a href="layout3.html">레이아웃3</a>
-        <a href="gimal2.html">포트폴리오</a>
+        <a href="layout1/layout1.html">레이아웃1</a>
+        <a href="layout2/layout2.html">레이아웃2</a>
+        <a href="layout3/layout3.html">레이아웃3</a>
+        <a href="gimal/gimal2.html">포트폴리오</a>
     </nav>
 
     <div class="dna-container">
+        <div class="matrix-container">
+            <div class="matrix-text">Welcome to MY Portfolio</div>
+        </div>
         <div class="dna"></div>
     </div>
 </body>

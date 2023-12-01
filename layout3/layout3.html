@@ -4,12 +4,16 @@
     <title>layout3</title>
     <meta charset="utf-8" />
     <style>
+        body{
+            background-image: url("piece1.png");
+        }
         header ul{
             list-style: none;
             display: flex;
             padding:0px;
         }
         header li{
+            padding:0px;
             padding-right: 20px;
         }
         .short_line{
@@ -18,7 +22,36 @@
         }
         .content_card{
             width:310px;
+            background-color: white;
+            box-shadow: 1px 1px 1px 1px gray;
         }
+        .content_card>div:last-child{
+            padding:25px;
+        }
+        .content_card>div:first-child{
+            position: relative;
+        }
+        .content_card>div:last-child>div:nth-child(2){
+            color: gray;
+        }
+        .content_card img{
+        display: block;
+       }
+       .content_card p{
+        margin: 0px;
+       }
+        .category{
+            background-color: black;
+            color: white;
+            position: absolute;
+            left:0px;
+            bottom:0px;
+        }
+        .long_line{
+            border-top:dotted 1px gray;
+            margin: 10px 0px;
+        }
+  
     </style>
 </head>    
 <body>
@@ -51,7 +84,8 @@
                             abcdefg abcd efg abcd efg abcdefg abcd efg
                             abc defg abc defg abcdefg abcdefg abcdefg
                         </p>
-
+                        <div class="long_line"></div>
+                        <div>Read on</div>
                     </div>
                 </section>
             </div>

@@ -59,6 +59,73 @@
                 justify-content: space-between;
                 padding: 0px 45px;
                 background-color: #535353;
+                margin: 0;
+                overflow: hidden;
+                font-family: 'AppleSDGothicNeoL00', sans-serif;
+            }
+            .contact-container {
+                width: 100%;
+                height: 100%;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .section {
+                width: 1920px;
+                height: 151.94px;
+                position: relative;
+            }
+
+            .title {
+                width: 100%;
+                height: 33.76px;
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: rgba(0, 0, 0, 0.65);
+            }
+
+            .info {
+                width: 100%;
+                height: 85.01px;
+            }
+
+            .info-item {
+                width: 100%;
+                height: 33.76px;
+                display: flex;
+            }
+
+            .label {
+                width: 74.32px;
+                height: 33.76px;
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.65);
+            }
+
+            .content {
+                width: calc(100% - 74.32px);
+                height: 33.76px;
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.65);
+                word-wrap: break-word;
+            }
+
+            .icon {
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+
+            .icon img {
+                width: 34.90px;
+                height: 34.90px;
+                position: absolute;
+                left: 0;
+                top: 5.93px;
             }
         </style>
     </head>
@@ -70,12 +137,13 @@
                 <div class="jb-title">work
                     <div class="jb-text">
                         <ul>
-                            <li>home</li>
-                            <li>middle</li>
-                            <li>layout1</li>
-                            <li>layout2</li>
-                            <li>layout3</li>
-                            <li>goodbye2023</li>
+                            <li><a href="html.html">html연습</a></li>
+                            <li><a href="css.html">css연습</a></li>
+                            <li> <a href="main.html">자유주제페이지</a></li>
+                            <li><a href="layout1/layout1.html">레이아웃1</a></li>
+                            <li><a href="layout2/layout2.html">레이아웃2</a></li>
+                            <li><a href="layout3/layout3.html">레이아웃3</a></li>
+                            <li> <a href="gimal/gimal2.html">포트폴리오</a></li>
                         </ul>
                     </div>
                 </div>
@@ -83,35 +151,37 @@
             </header>
             <div>내용부분</div>
             <footer>
-                <div style="width: 100%; height: 100%; justify-content: center; align-items: center; display: inline-flex">
-                    <div style="width: 1920px; height: 151.94px; position: relative">
-                        <div style="width: 1920px; height: 151.94px; left: 0px; top: 0px; position: absolute;"></div>
-                        <div style="width: 465px; height: 123px; left: 14px; top: 13.57px; position: absolute">
-                            <div style="width: 346px; height: 33.91px; left: 0px; top: 0px; position: absolute; color: rgba(0, 0, 0, 0.65); font-size: 16px; font-family: AppleSDGothicNeoEB00; font-weight: 400; text-transform: uppercase; word-wrap: break-word">contact me</div>
-                            <div style="width: 465px; height: 85.01px; left: 0px; top: 37.98px; position: absolute">
-                                <div style="width: 465px; height: 33.76px; left: 0px; top: 0px; position: absolute">
-                                    <div style="width: 390.68px; height: 33.76px; left: 74.31px; top: 0px; position: absolute; color: rgba(0, 0, 0, 0.65); font-size: 14px; font-family: AppleSDGothicNeoL00; font-weight: 400; word-wrap: break-word">서울시 강동구 성내로 15길 10-7</div>
-                                    <div style="width: 74.32px; height: 33.76px; left: 0px; top: 0px; position: absolute; color: rgba(0, 0, 0, 0.65); font-size: 14px; font-family: AppleSDGothicNeoL00; font-weight: 400; word-wrap: break-word">HQ</div>
-                                </div>
-                                <div style="width: 465px; height: 33.76px; left: 0px; top: 25.62px; position: absolute">
-                                    <div style="width: 390.68px; height: 33.76px; left: 74.31px; top: 0px; position: absolute; color: rgba(0, 0, 0, 0.65); font-size: 14px; font-family: AppleSDGothicNeoL00; font-weight: 400; word-wrap: break-word">010-3105-6286</div>
-                                    <div style="width: 74.32px; height: 33.76px; left: 0px; top: 0px; position: absolute; color: rgba(0, 0, 0, 0.65); font-size: 14px; font-family: AppleSDGothicNeoL00; font-weight: 400; word-wrap: break-word">Phone</div>
-                                </div>
-                                <div style="width: 465px; height: 33.76px; left: 0px; top: 51.25px; position: absolute">
-                                    <div style="width: 390.68px; height: 33.76px; left: 74.31px; top: 0px; position: absolute; color: rgba(0, 0, 0, 0.65); font-size: 14px; font-family: AppleSDGothicNeoL00; font-weight: 400; word-wrap: break-word">dml5489@naver.com</div>
-                                    <div style="width: 74.32px; height: 33.76px; left: 0px; top: 0px; position: absolute; color: rgba(0, 0, 0, 0.65); font-size: 14px; font-family: AppleSDGothicNeoL00; font-weight: 400; word-wrap: break-word">Email</div>
-                                </div>
+                <div class="contact-container">
+                    <div class="section">
+                        <div class="title"><h1>contact me</h1></div>
+                        <div class="info">
+                            <div class="info-item">
+                                <div class="label">HQ</div>
+                                <div class="content">서울시 강동구 성내로 15길 10-7</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="label">Phone</div>
+                                <div class="content">010-3105-6286</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="label">Email</div>
+                                <div class="content">dml5489@naver.com</div>
                             </div>
                         </div>
-                        <div style="width: 552px; height: 66.32px; left: 505px; top: 13.57px; position: absolute">
-                            <div style="width: 552px; height: 33.76px; left: 0px; top: 0px; position: absolute; color: rgba(0, 0, 0, 0.65); font-size: 16px; font-family: AppleSDGothicNeoEB00; font-weight: 400; text-transform: uppercase; word-wrap: break-word">work hour </div>
-                            <div style="width: 309px; height: 33.76px; left: -0px; top: 32.56px; position: absolute; color: rgba(0, 0, 0, 0.65); font-size: 14px; font-family: AppleSDGothicNeoL00; font-weight: 400; word-wrap: break-word">월요일 - 금요일 (공휴일 제외) / 오전 10시 - 오후 6시<br/>문의의 경우 해당 시간에 답변이 가능합니다.</div>
+                    </div>
+                    <div class="section">
+                        <div class="title"><h1>work hour</h1></div>
+                        <div class="info">
+                            <div class="info-item">
+                                <div class="content">월요일 - 금요일 (공휴일 제외) / 오전 10시 - 오후 6시</div>
+                                <div class="content">문의의 경우 해당 시간에 답변이 가능합니다.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div style="width: 100%; height: 100%; position: relative">
-                    <img style="width: 34.90px; height: 34.90px; left: 0px; top: 5.93px; position: absolute" src="image 8 (1).png" />
-                </div>
+                <div class="icon">
+                    <img src="image 8 (1).png" alt="icon">
+                </div>            
             </footer>
         </div>
     </body>

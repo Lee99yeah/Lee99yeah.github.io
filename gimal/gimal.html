@@ -1,104 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이미지 슬라이드</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        #slideshow-container {
-            max-width: 1000px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        .slide {
-            display: none;
-            position: absolute;
-            width: 100%;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            font-size: 20px;
-            color: white;
-            background-color: black;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .prev {
-            left: 10px;
-        }
-
-        .next {
-            right: 10px;
-        }
-    </style>
-    <script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    const slides = document.getElementsByClassName("slide");
-    const dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) {
-        slideIndex = 1;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 슬라이더</title>
+  <style>
+    #slider-container {
+      width: 300px;
+      position: relative;
     }
 
-    if (n < 1) {
-        slideIndex = slides.length;
+    #image-slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
     }
 
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    .slide {
+      min-width: 100%vw;
+      box-sizing: border-box;
     }
 
-    slides[slideIndex - 1].style.display = "block";
-}
-</script>
+    #prevBtn, #nextBtn {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    #prevBtn {
+      left: 0;
+    }
+
+    #nextBtn {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+  </style>
 </head>
 <body>
 
-<div id="slideshow-container">
-    <div class="slide">
-        <img src="계원예대 홈페이지.png/1000x500" alt="Slide 1">
-    </div>
-    <div class="slide">
-        <img src="계원예대 홈페이지.png/1000x500" alt="Slide 2">
-    </div>
-    <div class="slide">
-        <img src="계원예대 홈페이지.png/1000x500" alt="Slide 3">
-    </div>
-
-    <button class="prev" onclick="plusSlides(-1)">❮</button>
-    <button class="next" onclick="plusSlides(1)">❯</button>
+<div id="slider-container">
+  <div id="image-slider">
+    <div class="slide"><img src="콘텐츠기획.png" alt="Image 1"></div>
+    <div class="slide"><img src="콘텐츠디자인.png" alt="Image 2"></div>
+    <div class="slide"><img src="모션그래픽.png" alt="Image 3"></div>
+  </div>
 </div>
+<span>  </span>
+<button id="prevBtn" onclick="prevSlide()">이전</button>
+<button id="nextBtn" onclick="nextSlide()">다음</button>
 
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  let currentIndex = 0;
+  const slideWidth = $(".slide").width();
+
+  function nextSlide() {
+    if (currentIndex < $(".slide").length - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateSlider();
+  }
+
+  function prevSlide() {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = $(".slide").length - 1;
+    }
+    updateSlider();
+  }
+
+  function updateSlider() {
+    const translateValue = -currentIndex * slideWidth;
+    $("#image-slider").css("transform", "translateX(" + translateValue + "px)");
+  }
+</script>
 </body>
 </html>
